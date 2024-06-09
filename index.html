@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>فروشگاه زنجیره ای شاپین</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/all.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/fontiran.css">
@@ -173,10 +173,89 @@
           <img src="./img/Layer-17.png" alt="product-banner">
           <img src="./img/Layer-22.png" alt="product-banner">
           <img src="./img/Layer-18.png" alt="product-banner">
-          <img src="./img/Layer-21.png" alt="product-banner">
-          <img src="./img/Layer-19.png" alt="product-banner">
           <img src="./img/Layer-16.png" alt="product-banner">
+          <img src="./img/Layer-20.png" alt="product-banner">
         </div>
+        <div class="best-sells">
+          <div class="best-sells__texts">
+            <span class="best-sells-texts__title">پرفروش ترین ها</span>
+            <p class="best-sells-texts__text">در این قست پرفروش ترین محصولاتی که توسط کاربران خریداری شده از تمام دسته بندی های سایت در لیست زیر قرار گرفته شده و همیشه بروز میشود.</p>
+          </div>
+          <div class="best-sells__links-and-buttons">
+            <div class="best-sells__buttons">
+              <button class="best-sells__button">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <button class="best-sells__button">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+            </div>
+            <span><a class="product-section__head-link best-sells__link" href="#">مشاهده لیست کامل</a></span>
+          </div>
+        </div>
+        <section id="best-sells-suggest" class="product-section__content">
+          <article class="product-section__content-box">
+            <a class="product-section__content__image">
+              <img src="./img/img2.jpg" alt="image" class="product-section__content-image">
+            </a>
+            <div class="product-section__content-info">
+              <a class="product-section__content-info-title">هارد دیسک اکسترنال...</a>
+              <span class="product__discount">۶۰۰۰۰ تومان</span>
+              <span class="product__original">۴۵۰۰۰ تومان</span>
+            </div>
+          </article>
+          <article class="product-section__content-box">
+            <a class="product-section__content__image">
+              <img src="./img/img2.jpg" alt="image" class="product-section__content-image">
+            </a>
+            <div class="product-section__content-info">
+              <a class="product-section__content-info-title">هارد دیسک اکسترنال...</a>
+              <span class="product__discount">۶۰۰۰۰ تومان</span>
+              <span class="product__original">۴۵۰۰۰ تومان</span>
+            </div>
+          </article>
+          <article class="product-section__content-box">
+            <a class="product-section__content__image">
+              <img src="./img/img2.jpg" alt="image" class="product-section__content-image">
+            </a>
+            <div class="product-section__content-info">
+              <a class="product-section__content-info-title">هارد دیسک اکسترنال...</a>
+              <span class="product__discount">۶۰۰۰۰ تومان</span>
+              <span class="product__original">۴۵۰۰۰ تومان</span>
+            </div>
+          </article>
+          <article class="product-section__content-box">
+            <a class="product-section__content__image">
+              <img src="./img/img2.jpg" alt="image" class="product-section__content-image">
+            </a>
+            <div class="product-section__content-info">
+              <a class="product-section__content-info-title">هارد دیسک اکسترنال...</a>
+              <span class="product__discount">۶۰۰۰۰ تومان</span>
+              <span class="product__original">۴۵۰۰۰ تومان</span>
+            </div>
+          </article>
+          <article class="product-section__content-box">
+            <a class="product-section__content__image">
+              <img src="./img/img2.jpg" alt="image" class="product-section__content-image">
+            </a>
+            <div class="product-section__content-info">
+              <a class="product-section__content-info-title">هارد دیسک اکسترنال...</a>
+              <span class="product__discount">۶۰۰۰۰ تومان</span>
+              <span class="product__original">۴۵۰۰۰ تومان</span>
+            </div>
+          </article>
+          <article class="product-section__content-box">
+            <a class="product-section__content__image">
+              <img src="./img/img2.jpg" alt="image" class="product-section__content-image">
+            </a>
+            <div class="product-section__content-info">
+              <a class="product-section__content-info-title">هارد دیسک اکسترنال...</a>
+              <span class="product__discount">۶۰۰۰۰ تومان</span>
+              <span class="product__original">۴۵۰۰۰ تومان</span>
+            </div>
+          </article>
+          </div>
+        </section>
       </div>
 
       <script src="js/jquery-1.9.1.min.js"></script>
@@ -184,6 +263,27 @@
       <script type="text/javascript">
           var SliderSS = $('#slider-ss');
           var SpecialSuggest = $('#product-special-suggest')
+          var BestSellsSuggest = $('#best-sells-suggest')
+
+          BestSellsSuggest.owlCarousel({
+              rtl:true,
+            margin:10,
+            dots:false,
+            responsive : {
+              0: {
+                items:1
+              },
+              600 : {
+                items:3
+              },
+              1000 : {
+                items:4
+              },
+              1200 : {
+                items:6
+              }
+            }
+          })
 
           SpecialSuggest.owlCarousel({
               rtl:true,

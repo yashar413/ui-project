@@ -6,6 +6,7 @@ html {
   font-family: IRANSans;
   font-weight: 300;
   font-size: .9em;
+  color:#4d4d4d;
 }
 
 a {
@@ -197,6 +198,10 @@ a {
   right: 50%;
 }
 
+/*
+ * Product Section
+ */
+
 .product-section {
   margin:35px 0 15px 0;
   padding:0 20px;
@@ -272,12 +277,16 @@ a {
   font-size: 1.2rem;
 }
 
+/* 
+ * Banner Box
+ */
+
 .banner-box{
   display: grid;
   margin: 40px 20px ;
   grid-template: 
   "item3 item2 item2 item1"
-  "item6 item6 item5 item4";
+  "item5 item5 item4 item4";
   gap:5px;
 }
 
@@ -301,13 +310,88 @@ a {
   grid-area: item5;
 }
 
-.banner-box > :nth-child(6){
-  grid-area: item6;
-}
-
 .banner-box > img { 
   width:100%;
 }
+
+/*
+ * Best Sells
+ */
+
+.best-sells__texts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.best-sells-texts__title {
+  font-size: 1.8rem;
+  border-bottom: 3px solid;
+}
+
+.best-sells-texts__text {
+  width: 780px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 31px;
+}
+
+.best-sells__links-and-buttons {
+  display:flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-top:15px;
+}
+
+.best-sells__button {
+  border:none;
+  width:35px;
+  height:35px;
+  font-size: 2rem;
+  color: #4d4d4d;
+}
+
+.best-sells__link {
+  padding-top: 12px ;
+  display: block;
+}
+
+#best-sells-suggest {
+  padding: 0 15px 0 15px;
+  width: 100%;
+}
+
+
+/*
+ * Responsive
+ */
+
+@media only screen and (max-width:950px) {
+  .banner-box {
+    grid-template:
+    "item2 item2 item3"
+    "item1 item4 item4"
+    "item5 item5 item5";
+  }
+  .best-sells-texts__text {
+    width: 610px;
+    font-size: .9rem;
+    margin-top: 20px;
+  }
+
+  .best-sells-texts__title {
+    font-size: 1.5rem;
+  }
+
+  .product-section__head-link {
+    font-size: 12px;
+  }
+
+  .product-section__head-title {
+    font-size: 1.5rem;
+  }
+}
+
 
 @media only screen and (max-width:767px) {
   .navigation .nav__left {
@@ -316,6 +400,22 @@ a {
 
   .search {
     display: none;
+  }
+
+  .best-sells-texts__text {
+    width: 465px;
+    font-size: .7rem;
+    margin-top: 15px;
+  }
+
+  .best-sells-texts__title {
+    font-size: 1.3rem;
+  }
+
+  .best-sells__button {
+    width:30px;
+    height:30px;
+    font-size: 1.5rem;
   }
 }
 
@@ -344,5 +444,32 @@ a {
 
   .special-suggest .owl-controls {
     right:40%;
+  }
+
+  .best-sells-texts__text {
+    width: 320px;
+    margin-top: 10px;
+  }
+
+  .best-sells__button {
+    width:25px;
+    height:25px;
+    font-size: 1.2rem;
+  }
+
+  .banner-box {
+    grid-template:
+    "item2 item2 "
+    "item1 item3"
+    "item4 item4"
+    "item5 item5";
+  }
+
+  .product-section__head-title {
+    font-size: 1.2rem;
+  }
+
+  .product-section__head-link {
+    font-size: 9px;
   }
 }
